@@ -91,15 +91,8 @@ jobs:
       - name: Updating package manager cache
         run: sudo apt update -y
 
-      - name: Upgrading system
-        run: sudo apt upgrade -y
-
       - name: Installing dependencies
         run: sudo bash ./install_requirements.sh
-
-      - name: Patching Magisk on WSA building script
-        run: |
-          echo "Yay, the upstream devs have fixed this :)"
 
       - name: Building Magisk on WSA
         run: bash ./build_wsa.sh
@@ -126,9 +119,6 @@ jobs:
 
       - name: Updating package manager cache
         run: sudo apt update -y
-
-      - name: Upgrading system
-        run: sudo apt upgrade -y
 
       - name: Installing dependencies
         run: sudo apt install p7zip
