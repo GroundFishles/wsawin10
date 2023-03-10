@@ -5,8 +5,8 @@ updates:
     schedule:
       interval: "daily"
     assignees:
-      - "wxx9248"
+      - "GroundFishles"
     commit-message:
       prefix: "Submodule Updates"
     reviewers:
-      - "wxx9248"
+      - "GroundFishles"
